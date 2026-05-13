@@ -88,7 +88,6 @@ public class HomeGUI {
         ItemStack red = buildSimpleItem(Material.RED_STAINED_GLASS_PANE, " ", "");
         for (int i = 0; i < 27; i++) inv.setItem(i, red);
 
-        // Confirm
         ItemStack confirm = new ItemStack(Material.LIME_WOOL);
         ItemMeta cm = confirm.getItemMeta();
         cm.displayName(MessageUtil.colorize("&a&l✔ Törlés megerősítése"));
@@ -100,7 +99,6 @@ public class HomeGUI {
         confirm.setItemMeta(cm);
         inv.setItem(11, confirm);
 
-        // Cancel
         ItemStack cancel = new ItemStack(Material.RED_WOOL);
         ItemMeta xm = cancel.getItemMeta();
         xm.displayName(MessageUtil.colorize("&c&l✖ Mégsem"));
@@ -108,7 +106,6 @@ public class HomeGUI {
         cancel.setItemMeta(xm);
         inv.setItem(15, cancel);
 
-        // Info
         inv.setItem(13, buildSimpleItem(Material.BOOK,
                 "&6Törlés: &e" + homeName, "&7Biztosan törlöd?"));
 
@@ -120,11 +117,10 @@ public class HomeGUI {
         ItemMeta meta = item.getItemMeta();
         meta.displayName(MessageUtil.colorize("&6&l" + home.getName()));
         meta.lore(List.of(
-            MessageUtil.colorize("&8" + home.getWorldName()),
-            MessageUtil.colorize(""),
-            MessageUtil.colorize("&a▶ Bal klikk: &7Teleportálás"),
-            MessageUtil.colorize("&c✖ Jobb klikk: &7Törlés")
-));
+                MessageUtil.colorize("&8" + home.getWorldName()),
+                MessageUtil.colorize(""),
+                MessageUtil.colorize("&a▶ Bal klikk: &7Teleportálás"),
+                MessageUtil.colorize("&c✖ Jobb klikk: &7Törlés")
         ));
         item.setItemMeta(meta);
         return item;
