@@ -120,13 +120,11 @@ public class HomeGUI {
         ItemMeta meta = item.getItemMeta();
         meta.displayName(MessageUtil.colorize("&6&l" + home.getName()));
         meta.lore(List.of(
-                MessageUtil.colorize("&8" + home.getWorldName()),
-                MessageUtil.colorize("&7X: &e" + String.format("%.1f", home.getX()) +
-                        " &7Y: &e" + String.format("%.1f", home.getY()) +
-                        " &7Z: &e" + String.format("%.1f", home.getZ())),
-                MessageUtil.colorize(""),
-                MessageUtil.colorize("&a▶ Bal klikk: &7Teleportálás"),
-                MessageUtil.colorize("&c✖ Jobb klikk: &7Törlés")
+            MessageUtil.colorize("&8" + home.getWorldName()),
+            MessageUtil.colorize(""),
+            MessageUtil.colorize("&a▶ Bal klikk: &7Teleportálás"),
+            MessageUtil.colorize("&c✖ Jobb klikk: &7Törlés")
+));
         ));
         item.setItemMeta(meta);
         return item;
