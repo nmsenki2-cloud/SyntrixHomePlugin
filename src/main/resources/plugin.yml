@@ -1,0 +1,47 @@
+name: SyntrixHomePlugin
+version: '${project.version}'
+main: hu.homeplugin.HomePlugin
+api-version: '1.21'
+description: Feature-rich home plugin with GUI
+authors: [ Syntrix ]
+
+commands:
+  home:
+    description: Open home GUI or teleport to a home
+    usage: /home [name]
+    aliases: [h]
+  sethome:
+    description: Set a home at your location
+    usage: /sethome <name>
+    aliases: [sh]
+  delhome:
+    description: Delete a home
+    usage: /delhome <name>
+    aliases: [dh]
+  homes:
+    description: List all your homes
+    usage: /homes
+  homereload:
+    description: Reload the plugin
+    usage: /homereload
+    permission: homeplugin.admin.reload
+
+permissions:
+  homeplugin.home:
+    default: true
+  homeplugin.sethome:
+    default: true
+  homeplugin.delhome:
+    default: true
+  homeplugin.homes:
+    default: true
+  homeplugin.homes.limit.5:
+    default: true
+  homeplugin.homes.limit.10:
+    default: op
+  homeplugin.homes.unlimited:
+    default: op
+  homeplugin.bypass.cooldown:
+    default: op
+  homeplugin.admin.reload:
+    default: op
