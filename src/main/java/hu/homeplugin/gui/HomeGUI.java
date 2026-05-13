@@ -83,8 +83,8 @@ public class HomeGUI {
     public Inventory buildDeleteConfirmGUI(Player player, String homeName) {
         String title = MessageUtil.colorizeString("&4&l✖ Törlés megerősítése");
         Inventory inv = Bukkit.createInventory(null, 27,
-                Component.text(title + "§0§" + homeName));
-
+                Component.text(title + "§1"));
+ 
         ItemStack red = buildSimpleItem(Material.RED_STAINED_GLASS_PANE, " ", "");
         for (int i = 0; i < 27; i++) inv.setItem(i, red);
 
