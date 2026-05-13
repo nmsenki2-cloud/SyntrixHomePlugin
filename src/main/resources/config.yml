@@ -1,0 +1,21 @@
+default-home-limit: 5
+teleport-cooldown: 3
+
+gui:
+  title: "&8&l✦ &6&lHomes &8&l✦"
+  filled-glass-color: BLACK
+
+messages:
+  prefix: "&8[&6&lSyntrix&8] &r"
+  home-set: "&aHome &e{name} &asikeresen beállítva!"
+  home-deleted: "&cHome &e{name} &ctörölve."
+  home-not-found: "&cNincs ilyen home: &e{name}"
+  home-teleported: "&aTeleportálva: &e{name}"
+  home-limit-reached: "&cElérted a maximum home limitet &e({limit})&c!"
+  home-name-invalid: "&cÉrvénytelen név! Csak betűk, számok és _ használható."
+  home-name-too-long: "&cA home neve maximum 16 karakter lehet!"
+  cooldown-active: "&cMég &e{seconds} &cmásodpercet kell várnod!"
+  no-permission: "&cNincs jogod ehhez!"
+  player-only: "&cEzt csak játékos futtathatja!"
+  home-deleted-confirm: "&cHome &e{name} &ctörölve."
+  plugin-reloaded: "&aPlugin újratöltve!"
